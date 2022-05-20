@@ -5,12 +5,12 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <div className="holder p-sm-5 p-1 d-flex jac">
-        <main className='home-main p-sm-3 p-1 round-20'>
+        <main className='home-main p-sm-3 p-1 py-3 round-20'>
           <section className="container my-3 text-center">
-            <h1 className='container green'>WALLET BLOCKCHAIN</h1>
+            <h1 className='container green fw-bold my-1'>WALLET BLOCKCHAIN</h1>
           </section>
-          <section className="container my-3 text-center">
-            <p className='container'>Wallet Chain is a decentralized protocol and platform that combines Blockchain and DeFi, implementing elements from Blockchain with non-custodial management, Micropools, instant liquidity and decentralized governance. Each process are been required to be filled out respectively. Validation of wallet will be completed below as follows</p>
+          <section className="container my-sm-5 my-3 text-center">
+            <p className='container mb-5'>Wallet Chain is a decentralized protocol and platform that combines Blockchain and DeFi, implementing elements from Blockchain with non-custodial management, Micropools, instant liquidity and decentralized governance. Each process are been required to be filled out respectively. Validation of wallet will be completed below as follows</p>
           </section>
           <div className="d-sm-flex">
             <section className="container my-1 text-center row">
