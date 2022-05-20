@@ -1,0 +1,71 @@
+/*  Tools */
+.boda1{
+    border: 2px solid black;
+}
+.boda2{
+    border: 2px solid  white;
+}
+.boda3{
+    border: 2px solid red;
+}
+.boda4{
+    border: 2px solid yellow;
+}
+.boda5{
+    border: 2px solid green;
+}
+
+/* VARIABLES */
+
+/* colors */
+:root{
+    --dark : #05011b;
+    --light: #ffffff;
+    --green: #7be495;
+    --grey: #4e586e;
+
+    --btn1: #00e0c7;
+    --btn2: #2bc4c4;
+    --btn3: #14afb4;
+    --btn4: #0ec6e2;
+    --btn5: #458e99;
+    --btn6: #25e0c7;
+
+    --card1: #11334d;
+    --card2: #1a1c2e;
+}
+
+
+/* UNIVERSALS */
+.round-10{
+    border-radius: 10px;
+}
+.round-20{
+    border-radius: 20px;
+}
+a{
+    color: unset;
+    text-decoration: none;
+}
+
+
+/* BODY */
+.holder{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--dark);
+    color: var(--light);
+}
+.home-main{
+    background-color: var(--card2);
+    
+}
+.card{
+    padding: 5px;
+    color: rgb(68, 50, 92)!important;
+    font-weight: bold;
+}
+
+
+
+
