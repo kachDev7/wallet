@@ -21,7 +21,8 @@
 :root{
     --dark : #05011b;
     --light: #ffffff;
-    --green: #7be495;
+    /* --green: #7be495; */
+    --green: #b8f5c7;
     --grey: #4e586e;
 
     --btn1: #00e0c7;
@@ -47,6 +48,13 @@ a{
     color: unset;
     text-decoration: none;
 }
+.jac{
+    justify-content: center;
+    align-items: center;
+}
+.green{
+    color: var(--green);
+}
 
 
 /* BODY */
@@ -62,10 +70,30 @@ a{
 }
 .card{
     padding: 5px;
-    color: rgb(68, 50, 92)!important;
+    /* color: rgb(68, 50, 92)!important; */
+    color: var(--light)!important;
     font-weight: bold;
+
 }
 
+.box1{
+    background-color: var(--btn1);
+}
+.box2{
+    background-color: var(--btn2);
+}
+.box3{
+    background-color: var(--btn3);
+}
+.box4{
+    background-color: var(--btn4);
+}
+.box5{
+    background-color: var(--btn5);
+}
+.box6{
+    background-color: var(--btn6);
+}
 
 
 
