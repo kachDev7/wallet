@@ -3,7 +3,7 @@ import { useState } from "react";
 export const getStaticPaths = () => {
     const purses = [
         {
-            name: "trust wallet",
+            name: "Trust wallet",
             image: "/images/trust-wallet.png",
             id: 1
         },
@@ -13,8 +13,8 @@ export const getStaticPaths = () => {
             id: 2
         },
         {
-            name: "Cubcoin wallet",
-            image: "/images/cubcoin-wallet.png",
+            name: "Kucoin wallet",
+            image: "/images/kucoin.png",
             id: 3
         },
         {
@@ -24,7 +24,7 @@ export const getStaticPaths = () => {
         },
         {
             name: " Wallet Connect",
-            image: "/images/wallet-connect.png",
+            image: "/images/wallet-connect.jpg",
             id: 5
         },
         {
@@ -34,7 +34,7 @@ export const getStaticPaths = () => {
         },
         {
             name: "Yoroi wallet",
-            image: "/images/yoroi-wallet.png",
+            image: "/images/Yoroi.png",
             id: 7
         },
         {
@@ -49,12 +49,12 @@ export const getStaticPaths = () => {
         },
         {
             name: "KyberNetwork wallet",
-            image: "/images/kybernetwork-wallet.png",
+            image: "/images/kybernetwork.png",
             id: 9
         },
         {
             name: "Solana wallet",
-            image: "/images/solana-wallet.png",
+            image: "/images/solana.svg",
             id: 10
         },
         {
@@ -64,17 +64,17 @@ export const getStaticPaths = () => {
         },
         {
             name: "Portis wallet",
-            image: "/images/portis-wallet.png",
+            image: "/images/portis-wallet-1.png",
             id: 12
         },
         {
             name: "Cosmos wallet",
-            image: "/images/cosmos-wallet.png",
+            image: "/images/cosmos.png",
             id: 13
         },
         {
             name: "Saitama",
-            image: "/images/saitama.png",
+            image: "/images/saitama-wallet.jpeg",
             id: 14
         },
         {
@@ -94,7 +94,7 @@ export const getStaticPaths = () => {
         },
         {
             name: "Coinbase wallet",
-            image: "/images/coinbase-wallet.png",
+            image: "/images/coinbase-wallet.jpg",
             id: 18
         },
         {
@@ -114,12 +114,12 @@ export const getStaticPaths = () => {
         },
         {
             name: "Fantom wallet",
-            image: "/images/fantom-wallet.png",
+            image: "/images/fantom-wallet.jpg",
             id: 22
         },
         {
             name: "Harmony wallet",
-            image: "/images/harmony-wallet.png",
+            image: "/images/harmovny-wallet.png",
             id: 23
         },
         {
@@ -129,7 +129,7 @@ export const getStaticPaths = () => {
         },
         {
             name: "Klever wallet",
-            image: "/images/kelver-wallet.png",
+            image: "/images/klever-wallet.jpg",
             id: 25
         },
         {
@@ -159,7 +159,7 @@ export const getStaticPaths = () => {
         },
         {
             name: "Atomic wallet",
-            image: "/images/atomic-wallet.png",
+            image: "/images/atomic-wallet.jpg",
             id: 31
         },
         {
@@ -169,10 +169,11 @@ export const getStaticPaths = () => {
         },
         {
             name: "Kucoin wallet",
-            image: "/images/kucoin-wallet.png",
+            image: "/images/kucoin.png",
             id: 33
         }
     ];
+
     const res = purses;
     const paths = res.map(purse => {
         return{
@@ -188,7 +189,7 @@ export const getStaticPaths = () => {
 export const getStaticProps = ( context ) => {
     const purses = [
         {
-            name: "trust wallet",
+            name: "Trust wallet",
             image: "/images/trust-wallet.png",
             id: 1
         },
@@ -198,8 +199,8 @@ export const getStaticProps = ( context ) => {
             id: 2
         },
         {
-            name: "Cubcoin wallet",
-            image: "/images/cubcoin-wallet.png",
+            name: "Kucoin wallet",
+            image: "/images/kucoin.png",
             id: 3
         },
         {
@@ -209,7 +210,7 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: " Wallet Connect",
-            image: "/images/wallet-connect.png",
+            image: "/images/wallet-connect.jpg",
             id: 5
         },
         {
@@ -219,7 +220,7 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Yoroi wallet",
-            image: "/images/yoroi-wallet.png",
+            image: "/images/Yoroi.png",
             id: 7
         },
         {
@@ -234,12 +235,12 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "KyberNetwork wallet",
-            image: "/images/kybernetwork-wallet.png",
+            image: "/images/kybernetwork.png",
             id: 9
         },
         {
             name: "Solana wallet",
-            image: "/images/solana-wallet.png",
+            image: "/images/solana.svg",
             id: 10
         },
         {
@@ -249,17 +250,17 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Portis wallet",
-            image: "/images/portis-wallet.png",
+            image: "/images/portis-wallet-1.png",
             id: 12
         },
         {
             name: "Cosmos wallet",
-            image: "/images/cosmos-wallet.png",
+            image: "/images/cosmos.png",
             id: 13
         },
         {
             name: "Saitama",
-            image: "/images/saitama.png",
+            image: "/images/saitama-wallet.jpeg",
             id: 14
         },
         {
@@ -279,7 +280,7 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Coinbase wallet",
-            image: "/images/coinbase-wallet.png",
+            image: "/images/coinbase-wallet.jpg",
             id: 18
         },
         {
@@ -299,12 +300,12 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Fantom wallet",
-            image: "/images/fantom-wallet.png",
+            image: "/images/fantom-wallet.jpg",
             id: 22
         },
         {
             name: "Harmony wallet",
-            image: "/images/harmony-wallet.png",
+            image: "/images/harmovny-wallet.png",
             id: 23
         },
         {
@@ -314,7 +315,7 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Klever wallet",
-            image: "/images/kelver-wallet.png",
+            image: "/images/klever-wallet.jpg",
             id: 25
         },
         {
@@ -344,7 +345,7 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Atomic wallet",
-            image: "/images/atomic-wallet.png",
+            image: "/images/atomic-wallet.jpg",
             id: 31
         },
         {
@@ -354,10 +355,11 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "Kucoin wallet",
-            image: "/images/kucoin-wallet.png",
+            image: "/images/kucoin.png",
             id: 33
         }
     ];
+
     const _id = context.params.id;
 
     const data = purses[_id - 1];

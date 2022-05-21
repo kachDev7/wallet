@@ -4,7 +4,7 @@ import Image from "next/image";
 const wallet = () => {
     const purses = [
         {
-            name: "trust wallet",
+            name: "Trust wallet",
             image: "/images/trust-wallet.png",
             id: 1
         },
@@ -14,8 +14,8 @@ const wallet = () => {
             id: 2
         },
         {
-            name: "Cubcoin wallet",
-            image: "/images/cubcoin-wallet.png",
+            name: "Kucoin wallet",
+            image: "/images/kucoin.png",
             id: 3
         },
         {
@@ -25,7 +25,7 @@ const wallet = () => {
         },
         {
             name: " Wallet Connect",
-            image: "/images/wallet-connect.png",
+            image: "/images/wallet-connect.jpg",
             id: 5
         },
         {
@@ -35,7 +35,7 @@ const wallet = () => {
         },
         {
             name: "Yoroi wallet",
-            image: "/images/yoroi-wallet.png",
+            image: "/images/Yoroi.png",
             id: 7
         },
         {
@@ -50,12 +50,12 @@ const wallet = () => {
         },
         {
             name: "KyberNetwork wallet",
-            image: "/images/kybernetwork-wallet.png",
+            image: "/images/kybernetwork.png",
             id: 9
         },
         {
             name: "Solana wallet",
-            image: "/images/solana-wallet.png",
+            image: "/images/solana.svg",
             id: 10
         },
         {
@@ -65,17 +65,17 @@ const wallet = () => {
         },
         {
             name: "Portis wallet",
-            image: "/images/portis-wallet.png",
+            image: "/images/portis-wallet-1.png",
             id: 12
         },
         {
             name: "Cosmos wallet",
-            image: "/images/cosmos-wallet.png",
+            image: "/images/cosmos.png",
             id: 13
         },
         {
             name: "Saitama",
-            image: "/images/saitama.png",
+            image: "/images/saitama-wallet.jpeg",
             id: 14
         },
         {
@@ -95,7 +95,7 @@ const wallet = () => {
         },
         {
             name: "Coinbase wallet",
-            image: "/images/coinbase-wallet.png",
+            image: "/images/coinbase-wallet.jpg",
             id: 18
         },
         {
@@ -115,12 +115,12 @@ const wallet = () => {
         },
         {
             name: "Fantom wallet",
-            image: "/images/fantom-wallet.png",
+            image: "/images/fantom-wallet.jpg",
             id: 22
         },
         {
             name: "Harmony wallet",
-            image: "/images/harmony-wallet.png",
+            image: "/images/harmovny-wallet.png",
             id: 23
         },
         {
@@ -130,7 +130,7 @@ const wallet = () => {
         },
         {
             name: "Klever wallet",
-            image: "/images/kelver-wallet.png",
+            image: "/images/klever-wallet.jpg",
             id: 25
         },
         {
@@ -160,7 +160,7 @@ const wallet = () => {
         },
         {
             name: "Atomic wallet",
-            image: "/images/atomic-wallet.png",
+            image: "/images/atomic-wallet.jpg",
             id: 31
         },
         {
@@ -170,11 +170,10 @@ const wallet = () => {
         },
         {
             name: "Kucoin wallet",
-            image: "/images/kucoin-wallet.png",
+            image: "/images/kucoin.png",
             id: 33
         }
     ];
-
     const WalletBtn = () => {
         return(
             <div className="container d-flex coll d-flex jat">
@@ -190,7 +189,7 @@ const wallet = () => {
         <div className="container">
             <main className="wallet-holder">
                 <div className="container text-center my-3">
-                    <h3 className="green">Wallets</h3>
+                    <h3 className="green">My Wallets</h3>
                 </div>
                 <div className="container text-center">
                     <p className="text-light mb-3">The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app..</p>
