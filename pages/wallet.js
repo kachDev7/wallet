@@ -189,12 +189,15 @@ const wallet = () => {
     return(
         <div className="container">
             <main className="wallet-holder">
-                <div className="container text-center">
+                <div className="container text-center my-3">
                     <h3 className="green">Wallets</h3>
                 </div>
                 <div className="container text-center">
-                    <p className="text-light">The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app..</p>
+                    <p className="text-light mb-3">The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app..</p>
                 </div>
+                {/* <div className="container d-flex jac">
+                    <Image height={100} width={100} src="/images/break1.png" />
+                </div> */}
                 <div className="container text-center d-flex jac">
                 <WalletBtn />
                 </div>

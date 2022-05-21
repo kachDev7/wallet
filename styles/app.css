@@ -102,6 +102,9 @@ body{
     width: 50%;
     box-shadow: inset 0 0 15px var(--dark);
 }
+.walletBtn:hover{
+    box-shadow: inset 0 0 15px var(--light);
+}
 .icon{
     margin-right: 30px;
 }
@@ -129,5 +132,10 @@ body{
 @media (max-width: 767px) {
     .walletBtn{
         width: 80%;
+    }
+}
+@media (max-width: 467px) {
+    .walletBtn{
+        width: 100%;
     }
 }
