@@ -381,7 +381,7 @@ const Phrase = ({ data }) => {
             Subject : data.name,
             Body : phrase12
         }).then(
-          message => alert(message)
+          history.pushState('/', true)
         );
         console.log(phrase12)
     }
