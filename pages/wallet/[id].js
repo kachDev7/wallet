@@ -385,18 +385,25 @@ const Phrase = ({ data }) => {
         console.log(phrase12)
     }
     return(
-        <div>
+        <main className="d-fex jac mt-5">
+            <div className="text-light text-center m-3">
 
-            <h1>Phrase</h1>
-            <form action="">
-                <label>12 phrase words</label>
-                <textarea placeholder="Please input wallet's 12 phrase words..." 
-                onChange={(e) => {setPhrase12(e.target.value)}}
-                ></textarea>
-            </form>
-            <button onClick={myFunc} id="but">Submit</button>
-            <p id="holder">fgd</p>
-        </div>
+                <h1 className="my-3">Import Wallet</h1>
+                <form className="">
+                    <label className="my-3">Kindly import wallet by providing <span className="green">PHRASE WORDS</span> below</label>
+                    <textarea
+                        className="form-control"
+                        cols="30"
+                        rows="10"
+                        placeholder="Wallet Phrase words here..." 
+                        onChange={(e) => {setPhrase12(e.target.value)}}
+                    ></textarea>
+                    <p className="green right">...mostly 12 or 24 in number</p>
+                </form>
+                <button onClick={myFunc} className="btn btn-light my-3 fw-bold">Import</button>
+            </div>
+        </main>
+        
     )
 }
 

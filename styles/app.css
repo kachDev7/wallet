@@ -69,7 +69,9 @@ a{
 .green{
     color: var(--green);
 }
-
+.right{
+    text-align: right;
+}
 
 /* BODY */
 body{
@@ -127,6 +129,13 @@ body{
 .box6{
     background-color: var(--btn6);
 }
+
+.btn{
+    display: block;
+    width: 100%;
+}
+
+/* Id page */
 
 
 @media (max-width: 767px) {
