@@ -5,7 +5,7 @@ const wallet = () => {
     const purses = [
         {
             name: "Trust wallet",
-            image: "/images/trust-wallet.png",
+            image: "/images/Trust-Wallet2.png",
             id: 1
         },
         {
@@ -20,7 +20,7 @@ const wallet = () => {
         },
         {
             name: "AAVE wallet",
-            image: "/images/aave-wallet.png",
+            image: "/images/AAVE-wallet2.png",
             id: 4
         },
         {

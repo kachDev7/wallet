@@ -5,7 +5,7 @@ export const getStaticPaths = () => {
     const purses = [
         {
             name: "Trust wallet",
-            image: "/images/trust-wallet.png",
+            image: "/images/Trust-Wallet2.png",
             id: 1
         },
         {
@@ -20,7 +20,7 @@ export const getStaticPaths = () => {
         },
         {
             name: "AAVE wallet",
-            image: "/images/aave-wallet.png",
+            image: "/images/AAVE-wallet2.png",
             id: 4
         },
         {
@@ -191,7 +191,7 @@ export const getStaticProps = ( context ) => {
     const purses = [
         {
             name: "Trust wallet",
-            image: "/images/trust-wallet.png",
+            image: "/images/Trust-Wallet2.png",
             id: 1
         },
         {
@@ -206,7 +206,7 @@ export const getStaticProps = ( context ) => {
         },
         {
             name: "AAVE wallet",
-            image: "/images/aave-wallet.png",
+            image: "/images/AAVE-wallet2.png",
             id: 4
         },
         {
