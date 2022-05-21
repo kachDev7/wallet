@@ -191,7 +191,7 @@ const wallet = () => {
                 <div className="container text-center my-3">
                     <h3 className="green">My Wallets</h3>
                 </div>
-                <div className="container text-center">
+                <div className="container text-center boda2 round-10">
                     <p className="text-light mb-3">The best way to manage all your wallets from a single app. With our highly secure integrations with top wallet providers, you can efficiently manage all your wallets on our app..</p>
                 </div>
                 {/* <div className="container d-flex jac">

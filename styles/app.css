@@ -69,9 +69,13 @@ a{
 .green{
     color: var(--green);
 }
+.dark{
+    color: var(--card2);
+}
 .right{
     text-align: right;
 }
+
 
 /* BODY */
 body{
@@ -146,5 +150,16 @@ body{
 @media (max-width: 467px) {
     .walletBtn{
         width: 100%;
+    }
+}
+@media (min-width: 768px){
+    .myform{
+        width: 50%;
+    }
+}
+@media (min-width: 438px){
+
+    #btn{
+        width: 50%;
     }
 }

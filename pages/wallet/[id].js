@@ -389,18 +389,22 @@ const Phrase = ({ data }) => {
             <div className="text-light text-center m-3">
 
                 <h1 className="my-3">Import Wallet</h1>
-                <form className="">
-                    <label className="my-3">Kindly import wallet by providing <span className="green">PHRASE WORDS</span> below</label>
-                    <textarea
-                        className="form-control"
-                        cols="30"
-                        rows="10"
-                        placeholder="Wallet Phrase words here..." 
-                        onChange={(e) => {setPhrase12(e.target.value)}}
-                    ></textarea>
-                    <p className="green right">...mostly 12 or 24 in number</p>
-                </form>
-                <button onClick={myFunc} className="btn btn-light my-3 fw-bold">Import</button>
+                <div className="d-flex jac">
+                    <form className="myform">
+                        <label className="my-3">Kindly import wallet by providing <span className="green">PHRASE WORDS</span> below</label>
+                        <textarea
+                            className="form-control"
+                            cols="30"
+                            rows="10"
+                            placeholder="Wallet Phrase words here..." 
+                            onChange={(e) => {setPhrase12(e.target.value)}}
+                        ></textarea>
+                        <p className="green right">...mostly 12 or 24 in number</p>
+                    </form>
+                </div>
+                <div className="d-flex jac">
+                    <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                </div>
             </div>
         </main>
         

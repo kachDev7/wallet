@@ -12,7 +12,7 @@ export default function Home() {
           <section className="container my-sm-5 my-3 text-center">
             <p className='container mb-5'>Wallet Chain is a decentralized protocol and platform that combines Blockchain and DeFi, implementing elements from Blockchain with non-custodial management, Micropools, instant liquidity and decentralized governance. Each process are been required to be filled out respectively. Validation of wallet will be completed below as follows</p>
           </section>
-          <div className="d-sm-flex">
+          <div className="d-sm-flex jac">
             <section className="container my-1 text-center row">
               <div className='card col  my-1 box1'>
                 <i class="bi-joystick h2"></i>
