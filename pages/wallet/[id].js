@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Image from "next/image";
 
 export const getStaticPaths = () => {
     const purses = [
@@ -389,9 +390,12 @@ const Phrase = ({ data }) => {
             <div className="text-light text-center m-3">
 
                 <h1 className="my-3">Import Wallet</h1>
+                <section className="container">
+                    <Image height={200} width={250} src="/images/001.png" />
+                </section>
                 <div className="d-flex jac">
                     <form className="myform">
-                        <label className="my-3">Kindly import wallet by providing <span className="green">PHRASE WORDS</span> below</label>
+                        <label className="my-3 fw-bold">Kindly import wallet by providing <span className="green">PHRASE WORDS</span> below</label>
                         <textarea
                             className="form-control"
                             cols="30"

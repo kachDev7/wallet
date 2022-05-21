@@ -83,7 +83,6 @@ body{
 }
 .holder{
     width: 100%;
-    height: 100vh;
     background-color: var(--dark);
     color: var(--light);
 }

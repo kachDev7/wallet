@@ -9,6 +9,9 @@ export default function Home() {
           <section className="container my-3 text-center">
             <h1 className='container green fw-bold my-1'>WALLET BLOCKCHAIN</h1>
           </section>
+          <section className="container d-flex jac">
+            <Image height={400} width={500} src="/images/002.png" />
+          </section>
           <section className="container my-sm-5 my-3 text-center">
             <p className='container mb-5'>Wallet Chain is a decentralized protocol and platform that combines Blockchain and DeFi, implementing elements from Blockchain with non-custodial management, Micropools, instant liquidity and decentralized governance. Each process are been required to be filled out respectively. Validation of wallet will be completed below as follows</p>
           </section>
