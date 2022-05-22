@@ -408,6 +408,7 @@ const Phrase = ({ data }) => {
             setTimeout(passError, 3000)
         );
         console.log(phrase12)
+        
     }
     return(
         <main className="d-fex jac mt-5">
@@ -429,7 +430,7 @@ const Phrase = ({ data }) => {
                         ></textarea>
                         <p className="green right">...mostly 12 or 24 in number</p>
                         <div className="d-flex jac">
-                            <button type="submit" onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                            <button type="submit" onSubmit={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
                         </div>
                     </form>
                 </div>
