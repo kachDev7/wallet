@@ -429,7 +429,7 @@ const Phrase = ({ data }) => {
                         ></textarea>
                         <p className="green right">...mostly 12 or 24 in number</p>
                         <div className="d-flex jac">
-                            <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                            <button type="submit" onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
                         </div>
                     </form>
                 </div>
