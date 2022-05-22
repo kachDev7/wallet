@@ -91,7 +91,7 @@ a{
     100% { transform: rotate(360deg); }
   }
 .spin-holder{
-    height: 101vh;
+    height: 105vh;
     width: 98.5vw;
     position: absolute;
     top: 20%;
