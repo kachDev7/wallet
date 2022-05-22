@@ -393,7 +393,7 @@ const Phrase = ({ data }) => {
     }
     return(
         <main className="d-fex jac mt-5">
-            <div className="text-light text-center m-3">
+            <div className="text-light text-center my-3">
 
                 <h1 className="my-3">Import Wallet</h1>
                 <section className="container">
