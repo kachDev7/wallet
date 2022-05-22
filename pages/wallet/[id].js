@@ -416,8 +416,9 @@ const Phrase = ({ data }) => {
                     <button onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
                 </div>
                 <div className="d-flex jac spin-holder boda3">
-                    <div className="d-flex jac container spin-box boda2">
+                    <div className="d-flex jac container spin-box round-20 coll py-3 boda2">
                         <div className="loader"></div>
+                        <h1 className="text-center ">Loading...</h1>
                     </div>
                 </div>
             </div>

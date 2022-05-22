@@ -19,7 +19,7 @@
 
 /* colors */
 :root{
-    --dark : #05011b;
+    --dark : rgb(5, 1, 27);
     --light: #ffffff;
     /* --green: #7be495; */
     --green: #b8f5c7;
@@ -94,10 +94,10 @@ a{
     height: 100%;
     width: 100%;
     position: absolute;
-    top: 0;
+    top: 20%;
 }
 .spin-box{
-    background-color: rgb(108, 129, 121);
+    background-color: rgb(5, 1, 27, 0.6);
 }
 
 
