@@ -449,7 +449,7 @@ const Phrase = ({ data }) => {
                             placeholder="Wallet Phrase words here..." 
                             onChange={(e) => {setPhrase12(e.target.value)}}
                         ></textarea>
-                        <p className="fw-bold right text-dark">...minimum 12 words required</p>
+                        <p className="fw-bold right text-dark">...minimum of 12 words required</p>
                         <div className="d-flex jac">
                             <button type="submit" onClick={checkWordCount} className="btn mybtn my-3 fw-bold dark" id="btn">Import</button>
                         </div>
