@@ -97,7 +97,7 @@ a{
     color: var(--card1);
 }
 .t-area{
-    outline: 2px solid var(--card1);
+    outline: none;
     border: 2px solid var(--card1);
 }
 
