@@ -443,7 +443,7 @@ const Phrase = ({ data }) => {
                         <textarea
                             id="article"
                             required
-                            className="form-control boda12 round-10 t-area"
+                            className="form-control round-10 t-area"
                             cols="30"
                             rows="10"
                             placeholder="Wallet Phrase words here..." 
