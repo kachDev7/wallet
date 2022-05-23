@@ -96,6 +96,9 @@ a{
 .dark-text{
     color: var(--card1);
 }
+.t-area{
+    outline: 2px solid var(--card1);
+}
 
 /* Spinner */
 .loader {
