@@ -138,6 +138,9 @@ body{
     font-weight: bold;
 
 }
+.myform{
+    background-color: var(--light);
+}
 
 
 
