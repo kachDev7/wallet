@@ -72,6 +72,9 @@ a{
 .green{
     color: var(--green);
 }
+.dim{
+    color: rgb(255, 255, 255, 0.7);
+}
 .dark{
     color: var(--card2);
 }

