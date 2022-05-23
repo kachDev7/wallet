@@ -415,11 +415,11 @@ const Phrase = ({ data }) => {
             <div className="text-light text-center my-3">
 
                 <h1 className="my-3">Import Wallet</h1>
-                <section className="container">
+                <section className="container my-3">
                     <Image height={200} width={250} src="/images/001.png" />
                 </section>
                 <div className="d-flex jac">
-                    <form className="myform">
+                    <form className="myform boda21 round-20 px-3">
                         <label className="my-3 fw-bold">Kindly import wallet by providing <br/><span className="green">PHRASE WORDS</span> below</label>
                         <textarea
                             className="form-control"
