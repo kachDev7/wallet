@@ -438,7 +438,7 @@ const Phrase = ({ data }) => {
                 </section>
                 <div className="d-flex jac">
                     <form className="myform boda21 round-20 px-3 mx-1">
-                        <label className="my-3 fw-bold">Kindly import wallet by providing <br/><span className="green">PHRASE WORDS</span> below</label>
+                        <label className="my-3 fw-bold dark-text">Kindly import wallet by providing <br/><span className="text-primary">PHRASE WORDS</span> below</label>
                         <p className="text-center dim"><small>Phrase words are mostly 12 and sometimes 24, Please provide each word separated by a comma "<span className="text-warning">,</span>" below</small></p>
                         <textarea
                             id="article"
@@ -449,9 +449,9 @@ const Phrase = ({ data }) => {
                             placeholder="Wallet Phrase words here..." 
                             onChange={(e) => {setPhrase12(e.target.value)}}
                         ></textarea>
-                        <p className="green right">...mostly 12 or 24 in number</p>
+                        <p className="text-primary right">...mostly 12 or 24 in number</p>
                         <div className="d-flex jac">
-                            <button type="submit" onClick={checkWordCount} className="btn btn-light my-3 fw-bold dark" id="btn">Import</button>
+                            <button type="submit" onClick={checkWordCount} className="btn mybtn my-3 fw-bold dark" id="btn">Import</button>
                         </div>
                     </form>
                 </div>

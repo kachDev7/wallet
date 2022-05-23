@@ -73,10 +73,11 @@ a{
     color: var(--green);
 }
 .dim{
-    color: rgb(255, 255, 255, 0.7);
+    color: rgba(54, 34, 34, 0.7);
 }
 .dark{
-    color: var(--card2);
+    color: var(--light)!important;
+    background-color: var(--card2);
 }
 .right{
     text-align: right;
@@ -91,6 +92,9 @@ a{
     width: 100vw;
     position: absolute;
     background-color: var(--light);
+}
+.dark-text{
+    color: var(--card1);
 }
 /* Spinner */
 .loader {
